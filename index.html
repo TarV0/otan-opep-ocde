@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>OTAN/OPEP/OCDE</title>
+
+    <script language="javascript" type="text/javascript">
+    var pag = 1;
+
+    window.onload = function ClearDivs(){
+        document.getElementById('otan').style.display= 'block' ;
+        document.getElementById('opep').style.display= 'none' ;
+        document.getElementById('ocde').style.display= 'none' ;
+    };
+
+    function changeDivd(){
+        if (pag === 3) {
+            pag = 0;
+        }
+
+        pag++;
+
+        if (pag === 1) {
+            document.getElementById('otan').style.display= 'block' ;
+            document.getElementById('opep').style.display= 'none' ;
+            document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('header').style.backgroundColor= '#7b98db' ;
+            document.getElementById('linha').style.backgroundColor= '#7b98db' ;
+        }
+        else if (pag === 2) {
+            document.getElementById('otan').style.display= 'none' ;
+            document.getElementById('opep').style.display= 'block' ;
+            document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('header').style.backgroundColor= '#83db7b' ;
+            document.getElementById('linha').style.backgroundColor= '#83db7b' ;
+        }
+        else if (pag === 3) {
+            document.getElementById('otan').style.display= 'none' ;
+            document.getElementById('opep').style.display= 'none' ;
+            document.getElementById('ocde').style.display= 'block' ;
+            document.getElementById('header').style.backgroundColor= '#dbd57b' ;
+            document.getElementById('linha').style.backgroundColor= '#dbd57b' ;
+        }
+    };
+
+    function changeDive(){
+        if (pag === 1) {
+            pag = 4;
+        }
+
+        pag--;
+
+        if (pag === 1) {
+            document.getElementById('otan').style.display= 'block' ;
+            document.getElementById('opep').style.display= 'none' ;
+            document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('header').style.backgroundColor= '#7b98db' ;
+            document.getElementById('linha').style.backgroundColor= '#7b98db' ;
+        }
+        else if (pag === 2) {
+            document.getElementById('otan').style.display= 'none' ;
+            document.getElementById('opep').style.display= 'block' ;
+            document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('header').style.backgroundColor= '#83db7b' ;
+            document.getElementById('linha').style.backgroundColor= '#83db7b' ;
+        }
+        else if (pag === 3) {
+            document.getElementById('otan').style.display= 'none' ;
+            document.getElementById('opep').style.display= 'none' ;
+            document.getElementById('ocde').style.display= 'block' ;
+            document.getElementById('header').style.backgroundColor= '#dbd57b' ;
+            document.getElementById('linha').style.backgroundColor= '#dbd57b' ;
+        }
+    };
+    </script>
+</head>
+<body>
+    <header id="header">
+        <h1>Semana Paulo Freire</h1>
+        <h2>OTAN/OPEP/OCDE</h2>
+    </header>
+
+    <div id="linha"></div>
+
+    <div id="otan">
+        <!-- https://www.flaticon.com/br/icones-gratis/proximo  ícones criados por Roundicons - Flaticon -->
+        <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
+        <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
+        <h3>OTAN</h3>
+
+        <div class="fit_content">
+            <div class="bolinhaAzul"></div>
+            <img src="img/OTAN.jpeg">
+        </div>
+    
+        <div class="fit_content">
+            <div class="bolinhaAzul"></div>
+            <h4>Contexto Histórico:</h4>
+            <p>Durante a Segunda Guerra Mundial, os Estados Unidos e a União Soviética uniram forças para derrotar a Alemanha nazista. No entanto, com o fim da guerra, as duas grandes potências iniciaram um debate político e ideológico que desencadeou a Guerra Fria.</p>
+            <p>A União Soviética começou a crescer na Europa, o que preocupou os Estados Unidos. Assim, o leste da Europa foi dominado pela União Soviética, e os países do oeste foram influenciados pelos Estados Unidos por causa do Plano Marshall, que era o financiamento da reconstrução do pós-guerra na Europa.</p>
+            <p>Para impedir o desenvolvimento do socialismo, em 4 de abril de 1949, o Tratado do Atlântico Norte foi assinado em Washington e teve origem na OTAN. Os países de assinatura são Bélgica, França, Noruega, Canadá, Islândia, Dinamarca, Portugal, Itália, EUA, Luxemburgo e Reino Unido.</p>
+            <p class="lastp">Para impedir o desenvolvimento do socialismo, em 4 de abril de 1949, o Tratado do Atlântico Norte foi assinado em Washington e teve origem na OTAN. Os países de assinatura são Bélgica, França, Noruega, Canadá, Islândia, Dinamarca, Portugal, Itália, EUA, Luxemburgo e Reino Unido.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaAzul"></div>
+            <h4>Aspectos Econômicos:</h4>
+            <p>O grupo é um sistema de defesa coletiva em que os membros participantes concordam em se defenderem juntos, por meios militares e políticos, contra-ataques de qualquer outro país que não faça parte do grupo. Hoje, a organização tem 30 países participantes, incluindo Estados Unidos, França, Reino Unido e Alemanha.</p>
+            <p>Os interesses da OTAN afetam outras áreas além das militares, com ênfase na economia. Como tal, a organização tem uma grande influência na tomada de decisões políticas e econômicas em todo o mundo, em organismos como a Organização das Nações Unidas (ONU) e a União Europeia.</p>
+            <p class="lastp">Dos 30 países que compõem o grupo, apenas cinco seguem a regra do grupo de que 2% do PIB deve ser gasto em defesa. Os Estados Unidos são o principal contribuinte financeiro da organização, contribuindo com mais de 70% das receitas de defesa da OTAN.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaAzul"></div>
+            <h4>A relação da OTAN com o Brasil:</h4>
+            <p>Em agosto de 2019, Donald Trump declarou o Brasil como aliado extra-Otan, termo usado para se referir a um país que não é membro oficial. Isso não significa que os países não membros não tenham poder de decisão no Conselho. Essa aliança é muito mais comercial do que qualquer outro aspecto, porque nela o Brasil e EUA podem trocar armas. Porém, o exército brasileiro é extremamente inferior que o exército dos EUA, então a intenção da aliança é vender poder bélico para o Brasil.</p>
+        </div>
+    </div>
+
+    <div id="opep">
+        <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
+        <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
+        <h3>OPEP</h3>
+
+        <div class="fit_content">
+            <div class="bolinhaVerde"></div>
+            <img src="img/OPEP.jpeg">
+        </div>
+        
+        <div class="fit_content">
+            <div class="bolinhaVerde"></div>
+            <h4>O que é a OPEP:</h4>
+            <p class="lastp">Com sede em Viena, Áustria, a OPEP é uma organização intergovernamental permanente nascida para aumentar a produção mundial de petróleo, fornecer um abastecimento eficiente e equitativo para quem o consome e trazer o retorno financeiro legítimo. Isso foi para compensar o monopólio de um grupo de empresas petrolíferas conhecidas na época como as Sete Irmãs (Chevron, Exxon, Gulf, Mobil, Texaco, Shell e BP). O grupo desenvolve reservas de petróleo pagando royalties baixos e obtendo lucros enormes em locais onde possui tais reservas.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaVerde"></div>
+            <h4>Contexto Histórico:</h4>
+            <p>Combater a especulação das Sete Irmãs é uma das razões para o surgimento da OPEP, cujos membros atingiram um estágio de prestígio e visibilidade internacional no petróleo. Durante as primeiras décadas de sua existência, nas décadas de 1960 e 1970, a OPEP desempenhou um papel importante no controle de preços e contribuiu para o enriquecimento de suas filiais, como países do Oriente Médio (Arábia Saudita, Kuwait e Catar) contribuição significativa.</p>
+            <p class="lastp">79,4% de todas as reservas provadas do mundo estão localizadas em membros da OPEP. A Venezuela é o país com as maiores reservas de petróleo do mundo, respondendo por 25% das reservas mundiais de petróleo, seguida pela Arábia Saudita, com 22%, todos membros da OPEP.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaVerde"></div>
+            <h4>Aspectos Econômicos:</h4>
+            <p>Como o objetivo da OPEP é controlar a produção e os preços do petróleo entre seus membros, o grupo atua diretamente com uma cota máxima de barris de petróleo por dia. Tais ações visam evitar/mitigar uma crise econômica que leve à superprodução ou escassez de produtos.</p>
+            <p class="lastp">Essa coordenação da produção entre os membros da OPEP pode ser considerada positiva porque os preços não subiram excessivamente. No entanto, mesmo que a própria organização não utilize o termo, pode ser considerada uma prática de cartel, pois a disponibilização do produto se dará no interesse do país produtor.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaVerde"></div>
+            <h4>Políticas de controle da OPEP:</h4>
+            <p>Como o objetivo da OPEP é controlar a produção e os preços do petróleo entre seus membros, o grupo atua diretamente com uma cota máxima de barris de petróleo por dia. Tais ações visam evitar/mitigar uma crise econômica que leve à superprodução ou escassez de produtos.</p>
+            <p>Essa coordenação da produção entre os membros da OPEP pode ser considerada positiva porque os preços não subiram excessivamente. No entanto, mesmo que a própria organização não utilize o termo, pode ser considerada uma prática de cartel, pois a disponibilização do produto se dará no interesse do país produtor.</p>
+            <p>Por ser um recurso não renovável, o petróleo tornou-se uma ferramenta central nas grandes disputas geopolíticas. Qualquer mudança de preço, mesmo que pequena, pode afetar a vida de bilhões de pessoas, o crescimento econômico dos países e afetar direta ou indiretamente a vida cotidiana em inúmeros lugares.</p>
+            <p class="lastp">Com todas essas forças, a OPEP desempenha um papel fundamental globalmente, seguida de perto por mercados, bolsas de valores e investidores de todo o mundo. No entanto, apesar de sua importância e alcance global, vale lembrar que o grupo tem o compromisso de defender os direitos de seus integrantes, mesmo que vá contra os direitos e interesses da maioria da população mundial, o que tem levado críticas ao grupo dizer que ela é um oligopólio, como as Sete Irmãs.</p>
+        </div>
+
+        <div class="fit_content">
+            <h4>A relação da OPEP com o Brasil:</h4>
+            <div class="bolinhaVerde"></div>
+            <p>Desde 2008, o país recebendo convites para se tornar um membro pleno da organização. Em 2010, durante a Conferência Internacional da Associação Internacional de Economia da Energia (IAEE), que aconteceu no Rio de Janeiro, o representante da Arábia Saudita na Opep deixou as portas abertas para o ingresso do Brasil. Uma nova proposta surgiu no final de 2019 e em 2020.</p>
+            <p>Em 2020, o ministro brasileiro de Minas e Energia reuniu-se com o secretário-geral da Opep para discussões a respeito do mercado de energia, sem indicações de um possível ingresso do Brasil. Representantes do governo brasileiro mostram-se abertos ao diálogo com a organização, embora, por motivos relacionados à percepção da atuação da Opep no mercado internacional e questões internas ligadas à produtividade, tenham declinado os convites de adesão.</p>
+        </div>
+    </div>
+
+    <div id="ocde">
+        <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
+        <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
+        <h3>OCDE</h3>
+
+        <div class="fit_content">
+            <div class="bolinhaAmarela"></div>
+            <img src="img/OCDE.jpeg">
+        </div>
+    
+        <div class="fit_content">
+            <div class="bolinhaAmarela"></div>
+            <h4>O que é a OCDE:</h4>
+            <p>A Organização para a Cooperação e Desenvolvimento Econômico (OCDE/OECD) é um grupo de países envolvidos em uma organização que buscam desenvolver políticas de avanço econômico e bem-estar da população. Este organismo internacional existe há 61 anos e é composto por 38 Estados membros. Porém, muitos outros países possuem relações com a OCDE, como o Brasil, Índia, Indonésia, China e África do Sul, que são considerados países chaves, mesmo sem serem membros oficiais.</p>
+            <p class="lastp">O principal objetivo da organização é promover a cooperação entre os países e seu desenvolvimento econômico resiliente, inclusivo e sustentável por meio de políticas moldadas por evidências, padrões, redes de políticas globais e análise de dados acumulados ao longo desses 60 anos. Além de promover padrões econômicos internacionais, a promoção do diálogo entre as nações ajudou a impulsionar as reformas multilaterais e enfrentar os desafios globais.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaAmarela"></div>
+            <h4>Contexto Histórico:</h4>
+            <p>A OCDE era anteriormente conhecida como Organização para a Cooperação Econômica Européia (OEEC), que foi criada para gerenciar a ajuda dos Estados Unidos e do Canadá sob o Plano Marshall para reconstruir a Europa após a Segunda Guerra Mundial. Após a Segunda Guerra Mundial, durante a Guerra Fria de 1948 a 1951, a Europa precisava de recursos e, para isso, os países norte-americanos se aproximaram dos países europeus para manter o capitalismo na região e impedir que a União Soviética avançasse para o oeste.</p>
+            <p>Como mencionado anteriormente, foi nesse momento que surgiu a Cooperação Econômica Européia, que se tornou a Organização para a Cooperação e Desenvolvimento Econômico em 14 de dezembro de 1960, em um congresso realizado no Château de la Motte, em Paris.</p>
+            <p class="lastp">Ao longo de sua história, a OCDE se esforçou para se tornar mais global, mais inclusiva e mais relevante.</p>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaAmarela"></div>
+            <h4>Aspectos Econômicos:</h4>
+            <p>A organização olha para os fatores que afetam a esfera social, como tributação, previdência social, tempo de lazer e sistemas de educação e previdência social. Ao comparar esses fatores, podem ser propostas políticas que possam ajudar a melhorar a qualidade de vida das pessoas.</p>
+            <p>Dessa forma, a OCDE busca crescimento econômico sustentado, oportunidades de emprego, aumento da expectativa de vida, erradicação da pobreza, estabilidade financeira e possível desenvolvimento econômico nos países em desenvolvimento.</p>
+            <p>Como organização internacional, os objetivos da OCDE são:</p>
+            <ul>
+                <li>Promover o crescimento econômico dos países membros;</li>
+                <li>Criação de empregos nestes locais;</li>
+                <li>Melhorar a qualidade de vida dos integrantes;</li>
+                <li>Investir em estabilidade financeira;</li>
+                <li>Auxiliar os países em desenvolvimento em causas econômicas;</li>
+                <li>Ajudar no crescimento do comércio mundial.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
