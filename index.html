@@ -16,10 +16,12 @@
         document.getElementById('otan').style.display= 'block' ;
         document.getElementById('opep').style.display= 'none' ;
         document.getElementById('ocde').style.display= 'none' ;
+        document.getElementById('questions').style.display= 'none' ;
+        document.getElementById('acertou').style.display= 'none' ;
     };
 
     function changeDivd(){
-        if (pag === 3) {
+        if (pag === 4) {
             pag = 0;
         }
 
@@ -29,6 +31,7 @@
             document.getElementById('otan').style.display= 'block' ;
             document.getElementById('opep').style.display= 'none' ;
             document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('questions').style.display= 'none' ;
             document.getElementById('header').style.backgroundColor= '#7b98db' ;
             document.getElementById('linha').style.backgroundColor= '#7b98db' ;
         }
@@ -36,6 +39,7 @@
             document.getElementById('otan').style.display= 'none' ;
             document.getElementById('opep').style.display= 'block' ;
             document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('questions').style.display= 'none' ;
             document.getElementById('header').style.backgroundColor= '#83db7b' ;
             document.getElementById('linha').style.backgroundColor= '#83db7b' ;
         }
@@ -46,11 +50,19 @@
             document.getElementById('header').style.backgroundColor= '#dbd57b' ;
             document.getElementById('linha').style.backgroundColor= '#dbd57b' ;
         }
+        else if (pag === 4) {
+            document.getElementById('otan').style.display= 'none' ;
+            document.getElementById('opep').style.display= 'none' ;
+            document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('questions').style.display= 'block' ;
+            document.getElementById('header').style.backgroundColor= '#db7b7b' ;
+            document.getElementById('linha').style.backgroundColor= '#db7b7b' ;
+        }
     };
 
     function changeDive(){
         if (pag === 1) {
-            pag = 4;
+            pag = 5;
         }
 
         pag--;
@@ -59,6 +71,7 @@
             document.getElementById('otan').style.display= 'block' ;
             document.getElementById('opep').style.display= 'none' ;
             document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('questions').style.display= 'none' ;
             document.getElementById('header').style.backgroundColor= '#7b98db' ;
             document.getElementById('linha').style.backgroundColor= '#7b98db' ;
         }
@@ -66,6 +79,7 @@
             document.getElementById('otan').style.display= 'none' ;
             document.getElementById('opep').style.display= 'block' ;
             document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('questions').style.display= 'none' ;
             document.getElementById('header').style.backgroundColor= '#83db7b' ;
             document.getElementById('linha').style.backgroundColor= '#83db7b' ;
         }
@@ -73,8 +87,91 @@
             document.getElementById('otan').style.display= 'none' ;
             document.getElementById('opep').style.display= 'none' ;
             document.getElementById('ocde').style.display= 'block' ;
+            document.getElementById('questions').style.display= 'none' ;
             document.getElementById('header').style.backgroundColor= '#dbd57b' ;
             document.getElementById('linha').style.backgroundColor= '#dbd57b' ;
+        }
+        else if (pag === 4) {
+            document.getElementById('otan').style.display= 'none' ;
+            document.getElementById('opep').style.display= 'none' ;
+            document.getElementById('ocde').style.display= 'none' ;
+            document.getElementById('questions').style.display= 'block' ;
+            document.getElementById('header').style.backgroundColor= '#db7b7b' ;
+            document.getElementById('linha').style.backgroundColor= '#db7b7b' ;
+        }
+    };
+
+    function navOtan() {
+        document.getElementById('otan').style.display= 'block' ;
+        document.getElementById('opep').style.display= 'none' ;
+        document.getElementById('ocde').style.display= 'none' ;
+        document.getElementById('questions').style.display= 'none' ;
+        document.getElementById('header').style.backgroundColor= '#7b98db' ;
+        document.getElementById('linha').style.backgroundColor= '#7b98db' ;
+    }
+
+    function navOpep() {
+        document.getElementById('otan').style.display= 'none' ;
+        document.getElementById('opep').style.display= 'block' ;
+        document.getElementById('ocde').style.display= 'none' ;
+        document.getElementById('questions').style.display= 'none' ;
+        document.getElementById('header').style.backgroundColor= '#83db7b' ;
+        document.getElementById('linha').style.backgroundColor= '#83db7b' ;
+    }
+
+    function navOcde() {
+        document.getElementById('otan').style.display= 'none' ;
+        document.getElementById('opep').style.display= 'none' ;
+        document.getElementById('ocde').style.display= 'block' ;
+        document.getElementById('questions').style.display= 'none' ;
+        document.getElementById('header').style.backgroundColor= '#dbd57b' ;
+        document.getElementById('linha').style.backgroundColor= '#dbd57b' ;
+    }
+
+    function navPerg() {
+        document.getElementById('otan').style.display= 'none' ;
+        document.getElementById('opep').style.display= 'none' ;
+        document.getElementById('ocde').style.display= 'none' ;
+        document.getElementById('questions').style.display= 'block' ;
+        document.getElementById('header').style.backgroundColor= '#db7b7b' ;
+        document.getElementById('linha').style.backgroundColor= '#db7b7b' ;
+    }
+
+    function verificarRespostas() {
+        var resp1 = parseInt(document.querySelector('input[name="otan1"]:checked')?.value);
+        var resp2 = parseInt(document.querySelector('input[name="otan2"]:checked')?.value);
+        var resp3 = parseInt(document.querySelector('input[name="otan3"]:checked')?.value);
+        var resp4 = parseInt(document.querySelector('input[name="opep1"]:checked')?.value);
+        var resp5 = parseInt(document.querySelector('input[name="opep2"]:checked')?.value);
+        var resp6 = parseInt(document.querySelector('input[name="opep3"]:checked')?.value);
+        var resp7 = parseInt(document.querySelector('input[name="ocde1"]:checked')?.value);
+        var resp8 = parseInt(document.querySelector('input[name="ocde2"]:checked')?.value);
+        var resp9 = parseInt(document.querySelector('input[name="ocde3"]:checked')?.value);
+
+        var pontuacao = resp1 + resp2 + resp3 + resp4 + resp5 + resp6 + resp7 + resp8 + resp9;
+
+        if (resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9)
+        {
+            if (pontuacao === 9) {
+                document.getElementById('acertou').style.display= 'block' ;
+                document.getElementById("acertou").innerHTML = "Parabéns! Você acertou todas as questões.";
+            }
+            else if (pontuacao > 6) {
+                document.getElementById('acertou').style.display= 'block' ;
+                document.getElementById("acertou").innerHTML = "Muito bem! Você acertou " + pontuacao + " questões.";
+            }
+            else if (pontuacao > 3) {
+                document.getElementById('acertou').style.display= 'block' ;
+                document.getElementById("acertou").innerHTML = "Tente mais uma vez. Você acertou " + pontuacao + " questões.";
+            }
+            else {
+                document.getElementById('acertou').style.display= 'block' ;
+                document.getElementById("acertou").innerHTML = "Desejamos mais sorte na próxima. Você acertou " + pontuacao + " questões.";
+            }
+        }
+        else {
+            document.getElementById('acertou').style.display= 'block' ;
+            document.getElementById("acertou").innerHTML = "Por favor, marque respostas para todas as questões antes de verificar quantas você acertou.";
         }
     };
     </script>
@@ -88,6 +185,15 @@
     <div id="linha"></div>
 
     <div id="otan">
+        <ul id="ulotan">
+            <li></li>
+            <li></li>
+            <li onclick="navOtan()">OTAN</li>
+            <li onclick="navOpep()">OPEP</li>
+            <li onclick="navOcde()">OCDE</li>
+            <li onclick="navPerg()">Perguntas</li>
+        </ul>
+
         <!-- https://www.flaticon.com/br/icones-gratis/proximo  ícones criados por Roundicons - Flaticon -->
         <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
         <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
@@ -103,7 +209,6 @@
             <h4>Contexto Histórico:</h4>
             <p>Durante a Segunda Guerra Mundial, os Estados Unidos e a União Soviética uniram forças para derrotar a Alemanha nazista. No entanto, com o fim da guerra, as duas grandes potências iniciaram um debate político e ideológico que desencadeou a Guerra Fria.</p>
             <p>A União Soviética começou a crescer na Europa, o que preocupou os Estados Unidos. Assim, o leste da Europa foi dominado pela União Soviética, e os países do oeste foram influenciados pelos Estados Unidos por causa do Plano Marshall, que era o financiamento da reconstrução do pós-guerra na Europa.</p>
-            <p>Para impedir o desenvolvimento do socialismo, em 4 de abril de 1949, o Tratado do Atlântico Norte foi assinado em Washington e teve origem na OTAN. Os países de assinatura são Bélgica, França, Noruega, Canadá, Islândia, Dinamarca, Portugal, Itália, EUA, Luxemburgo e Reino Unido.</p>
             <p class="lastp">Para impedir o desenvolvimento do socialismo, em 4 de abril de 1949, o Tratado do Atlântico Norte foi assinado em Washington e teve origem na OTAN. Os países de assinatura são Bélgica, França, Noruega, Canadá, Islândia, Dinamarca, Portugal, Itália, EUA, Luxemburgo e Reino Unido.</p>
         </div>
 
@@ -123,6 +228,15 @@
     </div>
 
     <div id="opep">
+        <ul id="ulopep">
+            <li></li>
+            <li></li>
+            <li onclick="navOtan()">OTAN</li>
+            <li onclick="navOpep()">OPEP</li>
+            <li onclick="navOcde()">OCDE</li>
+            <li onclick="navPerg()">Perguntas</li>
+        </ul>
+
         <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
         <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
         <h3>OPEP</h3>
@@ -170,6 +284,15 @@
     </div>
 
     <div id="ocde">
+        <ul id="ulocde">
+            <li></li>
+            <li></li>
+            <li onclick="navOtan()">OTAN</li>
+            <li onclick="navOpep()">OPEP</li>
+            <li onclick="navOcde()">OCDE</li>
+            <li onclick="navPerg()">Perguntas</li>
+        </ul>
+
         <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
         <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
         <h3>OCDE</h3>
@@ -209,6 +332,263 @@
                 <li>Ajudar no crescimento do comércio mundial.</li>
             </ul>
         </div>
+    </div>
+
+    <div id="questions">
+        <ul id="ulperguntas">
+            <li></li>
+            <li></li>
+            <li onclick="navOtan()">OTAN</li>
+            <li onclick="navOpep()">OPEP</li>
+            <li onclick="navOcde()">OCDE</li>
+            <li onclick="navPerg()">Perguntas</li>
+        </ul>
+
+        <img src="img/seta-direita.png" class="setad" onclick="changeDivd()" >
+        <img src="img/seta-direita.png" class="setae" onclick="changeDive()" >
+        <h3>Perguntas</h3>
+
+        <div class="fit_content">
+            <div class="bolinhaVermelha"></div>
+            <h4>Perguntas sobre a Otan:</h4>
+
+            <p>1. Analise as afirmações listadas e assinale a alternativa correta:</p>
+            <p class="romanos">I.   Estados Unidos faz parte dos países membros da OTAN.</p>
+            <p class="romanos">II.  A OTAN foi criada para os países unirem forças para combater a Alemanha durante a Guerra Fria.</p>
+            <p class="romanos">III. A Segunda Guerra Mundial teve forte impacto diante da criação da OTAN..</p>
+            <table>
+                <tr>
+                    <td><label for="otan1a">A)</label></td>
+                    <td><input type="radio" id="otan1" name="otan1" value="0"></td>
+                    <td><p class="ptable">Apenas I e II estão corretas.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan1b">B)</label></td>
+                    <td><input type="radio" id="otan1" name="otan1" value="0"></td>
+                    <td><p class="ptable">Apenas II e III estão corretas.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan1c">C)</label></td>
+                    <td><input type="radio" id="otan1" name="otan1" value="1"></td>
+                    <td><p class="ptable">Apenas I e III estão corretas.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan1d">D)</label></td>
+                    <td><input type="radio" id="otan1" name="otan1" value="0"></td>
+                    <td><p class="ptable">Todas as afirmações estão corretas.</p></td>
+                </tr>
+            </table>
+
+            <p>2. Em qual país foi assinado o Tratado do Atlântico Norte?</p>
+            <table>
+                <tr>
+                    <td><label for="otan2a">A)</label></td>
+                    <td><input type="radio" id="otan2" name="otan2" value="0"></td>
+                    <td><p class="ptable">Alemanha.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan2b">B)</label></td>
+                    <td><input type="radio" id="otan2" name="otan2" value="1"></td>
+                    <td><p class="ptable">Estados Unidos.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan2c">C)</label></td>
+                    <td><input type="radio" id="otan2" name="otan2" value="0"></td>
+                    <td><p class="ptable">União Soviética.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan2d">D)</label></td>
+                    <td><input type="radio" id="otan2" name="otan2" value="0"></td>
+                    <td><p class="ptable">Polônia.</p></td>
+                </tr>
+            </table>
+
+            <p>3. Qual país abaixo não faz parte da Otan:</p>
+            <table>
+                <tr>
+                    <td><label for="otan3a">A)</label></td>
+                    <td><input type="radio" id="otan3" name="otan3" value="0"></td>
+                    <td><p class="ptable">Estônia.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan3b">B)</label></td>
+                    <td><input type="radio" id="otan3" name="otan3" value="1"></td>
+                    <td><p class="ptable">Escócia.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan3c">C)</label></td>
+                    <td><input type="radio" id="otan3" name="otan3" value="0"></td>
+                    <td><p class="ptable">Eslovênia.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="otan3d">D)</label></td>
+                    <td><input type="radio" id="otan3" name="otan3" value="0"></td>
+                    <td><p class="ptable">Eslováquia.</p></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaVermelha"></div>
+            <h4>Perguntas sobre a Opep:</h4>
+
+            <p>1. O petróleo é um grande peso para a economia de um país. Qual alternativa que contém os maiores produtores de petróleo da América do Sul?</p>
+            <table>
+                <tr>
+                    <td><label for="opep1a">A)</label></td>
+                    <td><input type="radio" id="opep1" name="opep1" value="0"></td>
+                    <td><p class="ptable">Paraguai e Bolívia</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep1b">B)</label></td>
+                    <td><input type="radio" id="opep1" name="opep1" value="0"></td>
+                    <td><p class="ptable">Argentina e Brasil</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep1c">C)</label></td>
+                    <td><input type="radio" id="opep1" name="opep1" value="1"></td>
+                    <td><p class="ptable">Brasil e Venezuela</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep1d">D)</label></td>
+                    <td><input type="radio" id="opep1" name="opep1" value="0"></td>
+                    <td><p class="ptable">Paraguai e Venezuela</p></td>
+                </tr>
+            </table>
+
+            <p>2. Qual a principal função da Opep?</p>
+            <table>
+                <tr>
+                    <td><label for="opep2a">A)</label></td>
+                    <td><input type="radio" id="opep2" name="opep2" value="1"></td>
+                    <td><p class="ptable">Organizar os países exportadores de petróleo.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep2b">B)</label></td>
+                    <td><input type="radio" id="opep2" name="opep2" value="0"></td>
+                    <td><p class="ptable">Vender e Exportar o Petróleo dos países participantes.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep2c">C)</label></td>
+                    <td><input type="radio" id="opep2" name="opep2" value="0"></td>
+                    <td><p class="ptable">Controlar a distribuição petrolífera pelo mundo.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep2d">D)</label></td>
+                    <td><input type="radio" id="opep2" name="opep2" value="0"></td>
+                    <td><p class="ptable">Competir com a Arábia Saudita em venda de petróleo.</p></td>
+                </tr>
+            </table>
+
+            <p>3. Quais medidas a Opep usa para evitar a superprodução do petróleo?</p>
+            <table>
+                <tr>
+                    <td><label for="opep3a">A)</label></td>
+                    <td><input type="radio" id="opep3" name="opep3" value="1"></td>
+                    <td><p class="ptable">Controla a produção e os preços do petróleo, e atuam com uma cota máxima de barris de petróleo por dia.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep3b">B)</label></td>
+                    <td><input type="radio" id="opep3" name="opep3" value="0"></td>
+                    <td><p class="ptable">Aplicam uma multa aos países que ultrapassam o limite de produção.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep3c">C)</label></td>
+                    <td><input type="radio" id="opep3" name="opep3" value="0"></td>
+                    <td><p class="ptable">Tomam as empresas petrolíferas que não cooperam com as medidas.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="opep3d">D)</label></td>
+                    <td><input type="radio" id="opep3" name="opep3" value="0"></td>
+                    <td><p class="ptable">Tiram o país da organização, assim o desvalorizando no mercado mundial uma que vez não faz mais parte da Opep.</p></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fit_content">
+            <div class="bolinhaVermelha"></div>
+            <h4>Perguntas sobre a Ocde:</h4>
+
+            <p>1. Qual o principal objetivo da Organização para a Cooperação e Desenvolvimento Econômico (OCDE/OECD) ?</p>
+            <table>
+                <tr>
+                    <td><label for="ocde1a">A)</label></td>
+                    <td><input type="radio" id="ocde1" name="ocde1" value="0"></td>
+                    <td><p class="ptable">Promover disputas econômicas entre seus países membros com intuito de diferenciar suas capacidades de avanço tecnológico.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde1b">B)</label></td>
+                    <td><input type="radio" id="ocde1" name="ocde1" value="0"></td>
+                    <td><p class="ptable">Promover a cooperação com países que não fazem parte da organização e necessitam de maior desenvolvimento econômico.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde1c">C)</label></td>
+                    <td><input type="radio" id="ocde1" name="ocde1" value="1"></td>
+                    <td><p class="ptable">Promover a cooperação entre os países membros e seu desenvolvimento econômico.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde1d">D)</label></td>
+                    <td><input type="radio" id="ocde1" name="ocde1" value="0"></td>
+                    <td><p class="ptable">Promover o desenvolvimento econômico das multinacionais estabelecidas nos países de terceiro mundo.</p></td>
+                </tr>
+            </table>
+
+            <p>2. A Cooperação Econômica Européia se tornou a Organização para a Cooperação e Desenvolvimento Econômico em 14 de dezembro de 1960, em um congresso realizado em:</p>
+            <table>
+                <tr>
+                    <td><label for="ocde2a">A)</label></td>
+                    <td><input type="radio" id="ocde2" name="ocde2" value="0"></td>
+                    <td><p class="ptable">Viena.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde2b">B)</label></td>
+                    <td><input type="radio" id="ocde2" name="ocde2" value="1"></td>
+                    <td><p class="ptable">Paris.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde2c">C)</label></td>
+                    <td><input type="radio" id="ocde2" name="ocde2" value="0"></td>
+                    <td><p class="ptable">Berlim.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde2d">D)</label></td>
+                    <td><input type="radio" id="ocde2" name="ocde2" value="0"></td>
+                    <td><p class="ptable">Bruxelas.</p></td>
+                </tr>
+            </table>
+
+            <p>3. Analise as afirmações seguintes com relação aos objetivos da OCDE e no final assinale a alternativa correta. </p>
+            <p class="romanos">( ) Criação de empregos</p>
+            <p class="romanos">( ) Criar campanhas contra avanços tecnológicos em áreas de preservação natural</p>
+            <p class="romanos">( ) Promover o crescimento econômico dos países membros</p>
+            <p class="romanos">( ) Incluir países com baixo desenvolvimento em projetos de países desenvolvidos</p>
+            <p class="romanos">( ) Ajudar no crescimento do comércio mundial</p>
+            <table>
+                <tr>
+                    <td><label for="ocde3a">A)</label></td>
+                    <td><input type="radio" id="ocde3" name="ocde3" value="0"></td>
+                    <td><p class="ptable">V, V, F, F e V.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde3b">B)</label></td>
+                    <td><input type="radio" id="ocde3" name="ocde3" value="0"></td>
+                    <td><p class="ptable">F, F, V, V e V.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde3c">C)</label></td>
+                    <td><input type="radio" id="ocde3" name="ocde3" value="0"></td>
+                    <td><p class="ptable">V, F, V, F e F.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="ocde3d">D)</label></td>
+                    <td><input type="radio" id="ocde3" name="ocde3" value="1"></td>
+                    <td><p class="ptable">V, F, V, F e V.</p></td>
+                </tr>
+            </table>
+        </div>
+
+        <button onclick="verificarRespostas()">Verificar Respostas</button>
+        <p id="acertou" class="center" ><p>
     </div>
 </body>
 </html>
