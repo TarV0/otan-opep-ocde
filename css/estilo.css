@@ -162,6 +162,10 @@ ul {
     .bolinhaAmarela {
         left: 10vw;
     }
+
+    .bolinhaVermelha {
+        left: 10vw;
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -231,6 +235,7 @@ button {
 
 .center {
     text-align: center;
+    text-indent: 0;
 }
 
 .romanos  {
@@ -292,4 +297,32 @@ button {
     color: #ffe6e6;
     display: inline-block;
     padding: 3px 15px
+}
+
+#ulotan li:hover {
+    color: #e6edff;
+    display: inline-block;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+#ulopep li:hover {
+    color: #e9ffe6;
+    display: inline-block;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+#ulocde li:hover {
+    color: #ffffe6;
+    display: inline-block;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+#ulperguntas li:hover {
+    color: #ffe6e6;
+    display: inline-block;
+    padding: 3px 15px;
+    cursor: pointer;
 }
