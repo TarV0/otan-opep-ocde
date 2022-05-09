@@ -86,6 +86,7 @@ img:hover {
 }
 
 p {
+    font-family: inherit;
     margin: 0.7em 15vw;
     text-align: justify;
     text-justify: inter-word;
@@ -107,7 +108,7 @@ p {
 
 .setad {
     position: absolute;
-    top: 19vh;
+    top: 22.5vh;
     right: 420px;
     height: 20px;
     width: 20px;
@@ -120,7 +121,7 @@ p {
 .setae {
     transform: scaleX(-1);
     position: absolute;
-    top: 19vh;
+    top: 22.5vh;
     left: 420px;
     height: 20px;
     width: 20px;
@@ -181,4 +182,114 @@ ul {
     .setae {
         left: 90px;
     }
+}
+
+#questions {
+    display: none;
+    background-color: #ffe6e6;
+    display: block;
+    overflow: auto;
+    padding: 0 0 40px 0;
+}
+
+.bolinhaVermelha {
+    position: absolute;
+    top: 5vh;
+    left: 8vw;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #db7b7b;
+}
+
+table {
+    margin: 4vh 15vw 10vh 15vw;
+}
+
+table tr td {
+    padding: 2px 3px;
+}
+
+button {
+    font-family: inherit;
+    padding: 4px 12px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background-color: #db7b7b;
+    border: 1px solid black;
+}
+
+.ptable {
+    font-family: inherit;
+    margin: 0 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    text-indent: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.romanos  {
+    font-family: inherit;
+    margin: 0.7em 15vw;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    text-indent: 60px;
+}
+
+#ulotan {
+    background-color: #7b98db;
+    height: 4vh;
+    list-style: none;
+    margin: 0;
+}
+
+#ulotan li {
+    color: #e6edff;
+    display: inline-block;
+    padding: 3px 15px
+}
+
+#ulopep {
+    background-color: #83db7b;
+    height: 4vh;
+    list-style: none;
+    margin: 0;
+}
+
+#ulopep li {
+    color: #e9ffe6;
+    display: inline-block;
+    padding: 3px 15px
+}
+
+#ulocde {
+    background-color: #dbd57b;
+    height: 4vh;
+    list-style: none;
+    margin: 0;
+}
+
+#ulocde li {
+    color: #ffffe6;
+    display: inline-block;
+    padding: 3px 15px
+}
+
+#ulperguntas {
+    background-color: #db7b7b;
+    height: 4vh;
+    list-style: none;
+    margin: 0;
+}
+
+#ulperguntas li {
+    color: #ffe6e6;
+    display: inline-block;
+    padding: 3px 15px
 }
