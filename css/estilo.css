@@ -186,6 +186,22 @@ ul {
     .setae {
         left: 90px;
     }
+    
+    #ulotan li {
+        padding: 3px 7px
+    }
+
+    #ulopep li {
+        padding: 3px 7px
+    }
+
+    #ulocde li {
+        padding: 3px 7px
+    }
+
+    #ulperguntas li {
+        padding: 3px 7px
+    }
 }
 
 #questions {
