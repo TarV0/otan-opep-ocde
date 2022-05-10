@@ -164,7 +164,7 @@ ul {
     }
 
     .bolinhaVermelha {
-        left: 10vw;
+        left: 10vw !important;
     }
 }
 
