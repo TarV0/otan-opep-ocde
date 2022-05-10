@@ -156,64 +156,6 @@ ul {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 600px) {
-    img:hover {
-        transform: scale(1.6);
-    }    
-
-    .bolinhaAzul {
-        left: 10vw;
-    }
-    
-    .bolinhaVerde {
-        left: 10vw;
-    }
-    
-    .bolinhaAmarela {
-        left: 10vw;
-    }
-
-    .bolinhaVermelha {
-        left: 10vw ;
-    }
-}
-
-@media only screen and (max-width: 980px) {
-    .setad {
-        right: 210px;
-    }
-    
-    .setae {
-        left: 210px;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .setad {
-        right: 90px;
-    }
-    
-    .setae {
-        left: 90px;
-    }
-    
-    #ulotan li {
-        padding: 3px 7px !important;
-    }
-
-    #ulopep li {
-        padding: 3px 7px !important;
-    }
-
-    #ulocde li {
-        padding: 3px 7px !important;
-    }
-
-    #ulperguntas li {
-        padding: 3px 7px !important;
-    }
-}
-
 #questions {
     display: none;
     background-color: #ffe6e6;
@@ -341,4 +283,62 @@ button {
     display: inline-block;
     padding: 3px 15px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    img:hover {
+        transform: scale(1.6);
+    }    
+
+    .bolinhaAzul {
+        left: 10vw;
+    }
+    
+    .bolinhaVerde {
+        left: 10vw;
+    }
+    
+    .bolinhaAmarela {
+        left: 10vw;
+    }
+
+    .bolinhaVermelha {
+        left: 10vw ;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .setad {
+        right: 210px;
+    }
+    
+    .setae {
+        left: 210px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .setad {
+        right: 90px;
+    }
+    
+    .setae {
+        left: 90px;
+    }
+    
+    #ulotan li {
+        padding: 3px 7px !important;
+    }
+
+    #ulopep li {
+        padding: 3px 7px !important;
+    }
+
+    #ulocde li {
+        padding: 3px 7px !important;
+    }
+
+    #ulperguntas li {
+        padding: 3px 7px !important;
+    }
 }
