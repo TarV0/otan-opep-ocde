@@ -188,19 +188,19 @@ ul {
     }
     
     #ulotan li {
-        padding: 3px 7px
+        padding: 3px 7px !important;
     }
 
     #ulopep li {
-        padding: 3px 7px
+        padding: 3px 7px !important;
     }
 
     #ulocde li {
-        padding: 3px 7px
+        padding: 3px 7px !important;
     }
 
     #ulperguntas li {
-        padding: 3px 7px
+        padding: 3px 7px !important;
     }
 }
 
@@ -273,7 +273,7 @@ button {
 #ulotan li {
     color: #e6edff;
     display: inline-block;
-    padding: 3px 15px
+    padding: 3px 15px;
 }
 
 #ulopep {
@@ -286,7 +286,7 @@ button {
 #ulopep li {
     color: #e9ffe6;
     display: inline-block;
-    padding: 3px 15px
+    padding: 3px 15px;
 }
 
 #ulocde {
@@ -299,7 +299,7 @@ button {
 #ulocde li {
     color: #ffffe6;
     display: inline-block;
-    padding: 3px 15px
+    padding: 3px 15px;
 }
 
 #ulperguntas {
@@ -312,7 +312,7 @@ button {
 #ulperguntas li {
     color: #ffe6e6;
     display: inline-block;
-    padding: 3px 15px
+    padding: 3px 15px;
 }
 
 #ulotan li:hover {
